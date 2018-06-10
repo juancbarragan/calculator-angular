@@ -1,0 +1,51 @@
+<table>
+	<tr>
+		<td [colSpan]="4"><input class='display' [value]="display"><br/><br/></td>
+	</tr>
+	<tr>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'CLEAR'" [text]="'C'"></app-calculator-button></td>
+	</tr>
+	<tr>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'7'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'8'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'9'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'OPERATION'" [text]="'+'" [operationType]="'ADDITION'"></app-calculator-button></td>
+	</tr>
+	<tr>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'4'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'5'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'6'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'OPERATION'" [text]="'-'"
+				[operationType]="'SUBSTRACTION'"></app-calculator-button></td>
+	</tr>
+	<tr>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'1'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'2'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'3'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'OPERATION'" [text]="'*'"
+				[operationType]="'MULTIPLICATION'"></app-calculator-button></td>
+	</tr>
+	<tr>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'.'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'NUMBER'" [text]="'0'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'RESULT'" [text]="'='" [operationType]="'EQUAL'"></app-calculator-button></td>
+		<td><app-calculator-button (outputToParent)="keyPressed($event)"
+				[buttonType]="'OPERATION'" [text]="'/'" [operationType]="'DIVISION'"></app-calculator-button></td>
+	</tr>
+</table>
